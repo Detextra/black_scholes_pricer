@@ -1,1 +1,5 @@
-self.t
+    plt.plot(strike_prices, deltas_put, label='Delta Put')
+    plt.plot(strike_prices, gammas, label='Gamma')
+    plt.plot(strike_prices, thetas_call, label='Theta Call')
+    plt.plot(strike_prices, thetas_put, label='Theta Put')
+    plt.plot(strike_prices, vegas, label='Vega')

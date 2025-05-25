@@ -81,6 +81,10 @@ class TestGreeks(unittest.TestCase):
                                msg=f"rho_call expected approx {self.expected_rho_call} but got {result_call}")
         self.assertAlmostEqual(result_put, self.expected_rho_put, delta=1,
                                msg=f"rho_put expected approx {self.expected_rho_put} but got {result_put}")
+        
+        # todo test d1, d2, N, N_prime and black_scholes
+        
+from pricer import N_prime
 
 if __name__ == '__main__':
     unittest.main()
