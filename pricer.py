@@ -12,11 +12,11 @@ from scipy.stats import norm
 
 def black_scholes_pricer_call (S, K, sigma, r, q, t):
     # usually called N(x)
-    C = S*math.exp(-q*t)*N(d1(S, K, sigma, r, q, t))-K*math.exp(-r*t)*N(d2(S, K, sigma, r, q, t))
+    return S*math.exp(-q*t)*N(d1(S, K, sigma, r, q, t))-K*math.exp(-r*t)*N(d2(S, K, sigma, r, q, t))
 
 def black_scholes_pricer_put (S, K, sigma, r, q, t):
     # usually called N(x)
-    P = K * math.exp(-r*t)*N(-d2(S, K, sigma, r, q, t))-S*math.exp(-q*t)*N(-d1(S, K, sigma, r, q, t))
+    return K * math.exp(-r*t)*N(-d2(S, K, sigma, r, q, t))-S*math.exp(-q*t)*N(-d1(S, K, sigma, r, q, t))
 
 # standard normal cumulative distribution
 def N(x):

@@ -1,9 +1,6 @@
 import unittest
+
 import pricer
-from pricer import N
-from pricer import d1
-from pricer import d2
-from pricer import N_prime
 from pricer import delta_call
 from pricer import delta_put
 from pricer import gamma
@@ -82,9 +79,5 @@ class TestGreeks(unittest.TestCase):
         self.assertAlmostEqual(result_put, self.expected_rho_put, delta=1,
                                msg=f"rho_put expected approx {self.expected_rho_put} but got {result_put}")
         
-        # todo test d1, d2, N, N_prime and black_scholes
-        
-from pricer import N_prime
-
 if __name__ == '__main__':
     unittest.main()

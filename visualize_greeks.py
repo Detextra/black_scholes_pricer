@@ -84,8 +84,5 @@ def greek_vs_underlying_price(K=100, sigma=0.2, r=0.05, q=0.05, t=1, T=365):
     # vary strike price
     # smile implied volatility vs moneyness
 
-    # todo 3. 3D surface plots
-    # greeks and options strike_prices
-    # axes : Stock price and time to maturity
     
 greek_vs_underlying_price()
